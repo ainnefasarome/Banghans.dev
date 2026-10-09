@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=1024">
+<title>Bang Hans - Web Developer &amp; UI/UX Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600;700;800&family=Allura&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#050506}
+body{font-family:Inter,Arial,sans-serif;color:#fff;-webkit-text-size-adjust:100%}
+#app{position:relative;width:1024px;height:1536px;overflow:hidden;margin:0 auto;background:#070708}
+.a{position:absolute;white-space:nowrap}
+.r{color:#e31b23}
+.an{font-family:Anton,Impact,sans-serif;font-weight:400}
+.s{cursor:pointer}
+svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ln{position:absolute;background:#4a1015;height:1px;width:1024px;left:0}
+.vl{position:absolute;background:#3b1013;width:1px}
+.g{color:#d8d8d8}
+.tag{position:absolute;height:26px;border:1px solid #5a5a5e;font-size:10.5px;line-height:24px;text-align:center;letter-spacing:.2px;color:#ddd;background:#0b0b0c}
+.card{position:absolute;top:700px;height:183px;border:1px solid #38383b;overflow:hidden}
+.ci{position:absolute;border:1.5px solid #e31b23;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:#070708}
+.st{position:absolute;left:546px;font-size:12.5px;line-height:14px;font-weight:700;color:#e31b23}
+.sd{position:absolute;left:546px;font-size:11.5px;line-height:14px;color:#bdbdbd;white-space:nowrap}
+.sn{position:absolute;left:433px;font:500 26px/28px Oswald,sans-serif;color:#e31b23}
+#toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#e31b23;color:#fff;font:600 16px Inter,sans-serif;padding:12px 22px;border-radius:30px;opacity:0;pointer-events:none;transition:.25s;z-index:99;box-shadow:0 6px 24px rgba(0,0,0,.6)}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="st" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z" fill="#e31b23" stroke="none"/></symbol>
+<symbol id="gl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+<symbol id="ml" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+<symbol id="pn" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+<symbol id="se" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5"/></symbol>
+<symbol id="bu" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.8c.7.6 1 1.2 1 2.2h5c0-1 .3-1.6 1-2.2A6 6 0 0012 3z"/></symbol>
+<symbol id="pe" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></symbol>
+<symbol id="co" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 5l-4 14"/></symbol>
+<symbol id="pl" viewBox="0 0 24 24"><path d="M21 3L3 11l7 3 3 7zM10 14L21 3"/></symbol>
+<symbol id="ar" viewBox="0 0 24 24"><path d="M2 12h19M15 6l6 6-6 6"/></symbol>
+</defs></svg>
+
+<div id="app">
+<!-- HERO -->
+<div class="a" style="left:0;top:0;width:1024px;height:632px;overflow:hidden">
+  <div class="a" id="big" style="color:transparent;-webkit-background-clip:text;background-clip:text;background-image:url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.38'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>&quot;),linear-gradient(180deg,#d9161f,#8a0a10);"><span class="an">BANGHANS</span></div>
+  <img class="a" src="foto.webp" alt="" onerror="this.style.display='none'" style="left:351px;top:74px;width:380px;z-index:2;-webkit-mask-image:linear-gradient(180deg,#000 86%,transparent 100%);mask-image:linear-gradient(180deg,#000 86%,transparent 100%)">
+  <div class="a" style="left:0;top:520px;width:1024px;height:112px;background:linear-gradient(0deg,#070708,transparent);z-index:3"></div>
+</div>
+<div class="a" style="left:30px;top:17px;font:500 14px/16px Inter;z-index:5"><span class="r">WEB DEVELOPER</span><br>DIGITAL CREATOR</div>
+<div class="a s" data-soon style="right:58px;top:27px;font:500 12.5px/14px Inter;z-index:5">AVAILABLE FOR FREELANCE</div>
+<svg class="a" style="left:979px;top:21px;width:22px;height:24px;z-index:5"><use href="#st"/></svg>
+<div class="ln" style="top:57px;left:30px;width:968px;z-index:5;background:#4a1519"></div>
+
+<div class="a" style="left:34px;top:240px;font:400 46px/50px Allura,cursive;font-style:italic;z-index:5">Hello, I'm</div>
+<div class="a an" id="n1" style="z-index:5;color:#fff">BANG</div>
+<div class="a an" id="n2" style="z-index:5;color:#fff">HANS</div>
+<div class="a r" style="left:32px;top:462px;font:500 22px/21px Oswald;z-index:5;letter-spacing:.3px">WEB DEVELOPER &amp;<br>UI/UX CREATOR</div>
+<div class="a g" style="left:32px;top:511px;font-size:13px;line-height:15.5px;z-index:5">I design and build digital, user-focused<br>web experiences that combine creativity<br>with strategy. Passionate about clean<br>design, smooth interactions, and details<br>that make a difference.</div>
+<svg class="a i r" style="left:32px;top:601px;width:17px;height:17px;z-index:5"><use href="#gl"/></svg>
+<div class="a" style="left:58px;top:603px;font-size:11px;line-height:14px;z-index:5">AVAILABLE WORLDWIDE</div>
+
+<div class="a" style="left:775px;top:311px;width:44px;height:44px;border:1.5px solid #e31b23;border-radius:50%;z-index:5"></div>
+<svg class="a" style="left:787px;top:323px;width:20px;height:20px;z-index:5"><use href="#st"/></svg>
+<div class="a" style="left:833px;top:309px;font-size:13px;line-height:15px;z-index:5;color:#eee">Turning ideas<br>into powerful<br>digital experiences.</div>
+
+<div class="ln" style="top:398px;left:840px;width:157px;z-index:5"></div>
+<div class="ln" style="top:470px;left:840px;width:157px;z-index:5"></div>
+<div class="ln" style="top:543px;left:840px;width:157px;z-index:5"></div>
+<div class="a an r" style="left:842px;top:412px;font-size:42px;line-height:44px;z-index:5">3+</div>
+<div class="a" style="left:905px;top:420px;font-size:11px;line-height:14px;z-index:5">YEARS<br>EXPERIENCE</div>
+<div class="a an r" style="left:842px;top:484px;font-size:42px;line-height:44px;z-index:5">40+</div>
+<div class="a" style="left:906px;top:492px;font-size:11px;line-height:14px;z-index:5">PROJECTS<br>COMPLETED</div>
+<div class="a an r" style="left:842px;top:556px;font-size:42px;line-height:44px;z-index:5">20+</div>
+<div class="a" style="left:906px;top:564px;font-size:11px;line-height:14px;z-index:5">HAPPY<br>CLIENTS</div>
+<div class="ln" style="top:632px;background:#6a0d13"></div>
+
+<!-- SELECTED PROJECTS -->
+<div class="a" style="left:30px;top:652px;font:600 21px/24px Inter">SELECTED PROJECTS</div>
+<div class="a" style="left:262px;top:664px;width:564px;height:1px;background:#555"></div>
+<div class="a s" data-soon style="left:843px;top:657px;font-size:11.5px;line-height:14px">VIEW ALL PROJECTS</div>
+<svg class="a i s" data-soon style="left:966px;top:655px;width:32px;height:18px"><use href="#ar"/></svg>
+
+<div class="card s" data-soon style="left:30px;width:312px;background:#0a0a0b">
+  <div class="a" style="left:28px;top:12px;font-size:7px;font-weight:700">VELOCE</div>
+  <div class="a" style="left:130px;top:12px;font-size:5px;color:#aaa;word-spacing:14px">Home Product About Contact</div>
+  <div class="a" style="left:28px;top:36px;font:700 24px/26px 'Playfair Display',serif">VELOCE</div>
+  <div class="a r" style="left:28px;top:62px;font:600 15px/18px 'Playfair Display',serif">BICYCLE</div>
+  <div class="a" style="left:28px;top:112px;font-size:6.5px;line-height:9px;color:#ccc">RIDE BEYOND<br>LIMITS</div>
+  <svg class="a" style="left:110px;top:30px;width:200px;height:140px" viewBox="0 0 200 140" fill="none" stroke-linecap="round"><circle cx="45" cy="95" r="36" stroke="#ddd" stroke-width="3"/><circle cx="160" cy="95" r="36" stroke="#ddd" stroke-width="3"/><path d="M45 95L90 50 130 50 160 95M90 50L100 95 45 95M100 95L130 50M82 42h18M130 50l8-20h14" stroke="#c9181f" stroke-width="3.5"/><path d="M100 95L45 95" stroke="#555" stroke-width="3"/></svg>
+</div>
+<div class="card s" data-soon style="left:367px;width:293px;background:#f1f0ee">
+  <div class="a" style="left:17px;top:8px;font-size:6px;color:#333;font-weight:700">WOODCRAFT</div>
+  <div class="a" style="left:17px;top:48px;font:400 19px/23px Inter;color:#222">Timeless<br>Crafted<br>Furniture</div>
+  <div class="a" style="left:17px;top:130px;width:38px;height:11px;border:1px solid #666"></div>
+  <svg class="a" style="left:110px;top:20px;width:180px;height:160px" viewBox="0 0 180 160"><path d="M70 20q30-8 60 0l6 62H64z" fill="#8a6a55"/><path d="M60 82h84l-4 22H64z" fill="#6f5242"/><path d="M68 104l-4 34M138 104l4 34" stroke="#2b2b2b" stroke-width="4"/><rect x="10" y="132" width="170" height="14" fill="#2c2623"/></svg>
+</div>
+<div class="card s" data-soon style="left:686px;width:308px;background:#050505">
+  <div class="a" style="left:22px;top:12px;font-size:6px;font-weight:700">URBANIC</div>
+  <div class="a" style="left:22px;top:55px;font:500 25px/24px Oswald;letter-spacing:.5px">STAY<br>AHEAD<br>IN STYLE</div>
+  <div class="a" style="left:22px;top:140px;width:44px;height:9px;border:1px solid #777"></div>
+  <svg class="a" style="left:140px;top:6px;width:168px;height:178px" viewBox="0 0 168 178"><ellipse cx="86" cy="42" rx="17" ry="22" fill="#b97a5e"/><path d="M66 38q4-28 26-24 20 4 14 30-6-18-18-14z" fill="#140b0a"/><path d="M50 178l10-110 26-14 30 14 20 110z" fill="#b3121a"/><path d="M80 56l6 40 8-40z" fill="#e8bfa6"/></svg>
+</div>
+<div class="a" style="left:32px;top:896px;font:500 38px/40px Oswald;color:#e31b23">01</div>
+<div class="a" style="left:86px;top:900px;font-size:13px;line-height:17px"><b style="font-weight:600">VELOCE BIKES</b><br><span class="g" style="font-size:12px">E-COMMERCE WEBSITE</span></div>
+<svg class="a i s" data-soon style="left:314px;top:907px;width:26px;height:16px"><use href="#ar"/></svg>
+<div class="a" style="left:367px;top:896px;font:500 38px/40px Oswald;color:#e31b23">02</div>
+<div class="a" style="left:423px;top:900px;font-size:13px;line-height:17px"><b style="font-weight:600">WOODCRAFT</b><br><span class="g" style="font-size:12px">FURNITURE WEBSITE</span></div>
+<svg class="a i s" data-soon style="left:634px;top:907px;width:26px;height:16px"><use href="#ar"/></svg>
+<div class="a" style="left:686px;top:896px;font:500 38px/40px Oswald;color:#e31b23">03</div>
+<div class="a" style="left:743px;top:900px;font-size:13px;line-height:17px"><b style="font-weight:600">URBANIC</b><br><span class="g" style="font-size:12px">FASHION MAGAZINE</span></div>
+<svg class="a i s" data-soon style="left:968px;top:907px;width:26px;height:16px"><use href="#ar"/></svg>
+<div class="ln" style="top:955px;background:#6a0d13"></div>
+
+<!-- EDUCATION & SKILLS -->
+<div class="a" style="left:32px;top:976px;font:600 21px/24px Inter">EDUCATION &amp; SKILLS</div>
+<div class="a r" style="left:32px;top:1030px;font:700 15.5px/18px Inter">EDUCATION</div>
+<div class="a" style="left:32px;top:1054px;font-size:13px;line-height:16px;font-weight:500">B.Sc. in Visual Communication Design</div>
+<div class="a" style="left:32px;top:1070px;font-size:12px;line-height:16px;color:#bbb">Binus University</div>
+<div class="a r" style="left:310px;top:1056px;font-size:12px;line-height:14px">2018 - 2022</div>
+<div class="a" style="left:32px;top:1101px;font-size:13px;line-height:16px;font-weight:500">UI/UX Design Certification</div>
+<div class="a" style="left:32px;top:1117px;font-size:12px;line-height:16px;color:#bbb">Google Career Certificates</div>
+<div class="a r" style="left:347px;top:1108px;font-size:12px;line-height:14px">2023</div>
+<div class="a r" style="left:32px;top:1162px;font:700 15.5px/18px Inter">SKILLS</div>
+<div class="tag" style="left:32px;top:1189px;width:83px">WEB DESIGN</div>
+<div class="tag" style="left:127px;top:1189px;width:79px">UI/UX DESIGN</div>
+<div class="tag" style="left:218px;top:1189px;width:69px">FIGMA</div>
+<div class="tag" style="left:297px;top:1189px;width:72px">FRAMER</div>
+<div class="tag" style="left:32px;top:1221px;width:74px">ADOBE XD</div>
+<div class="tag" style="left:118px;top:1221px;width:88px">PHOTOSHOP</div>
+<div class="tag" style="left:218px;top:1221px;width:70px">WEBFLOW</div>
+<div class="tag" style="left:297px;top:1221px;width:73px">HTML / CSS</div>
+<div class="tag" style="left:32px;top:1253px;width:84px">JAVASCRIPT</div>
+<div class="tag" style="left:127px;top:1253px;width:101px">GSAP ANIMATION</div>
+<div class="tag" style="left:239px;top:1253px;width:77px">SEO BASICS</div>
+<div class="vl" style="left:400px;top:955px;height:357px"></div>
+
+<!-- WORK PROCESS -->
+<div class="a" style="left:433px;top:976px;font:600 21px/24px Inter">WORK PROCESS</div>
+<div class="sn" style="top:1021px">01</div><div class="ci" style="left:476px;top:1012px;width:46px;height:46px"><svg class="i" width="20" height="20"><use href="#se"/></svg></div>
+<div class="st" style="top:1017px">DISCOVER</div><div class="sd" style="top:1034px">Understanding goals, audience,<br>and project requirements.</div>
+<div class="sn" style="top:1079px">02</div><div class="ci" style="left:476px;top:1070px;width:46px;height:46px"><svg class="i" width="20" height="20"><use href="#bu"/></svg></div>
+<div class="st" style="top:1077px">IDEATE</div><div class="sd" style="top:1094px">Planning, wireframing, and<br>creating the right concept.</div>
+<div class="sn" style="top:1137px">03</div><div class="ci" style="left:476px;top:1128px;width:46px;height:46px"><svg class="i" width="20" height="20"><use href="#pe"/></svg></div>
+<div class="st" style="top:1134px">DESIGN</div><div class="sd" style="top:1151px">Crafting visual design with a focus<br>on user experience.</div>
+<div class="sn" style="top:1195px">04</div><div class="ci" style="left:476px;top:1186px;width:46px;height:46px"><svg class="i" width="20" height="20"><use href="#co"/></svg></div>
+<div class="st" style="top:1193px">DEVELOP</div><div class="sd" style="top:1210px">Building fast, responsive, and<br>high-performing websites.</div>
+<div class="sn" style="top:1253px">05</div><div class="ci" style="left:476px;top:1244px;width:46px;height:46px"><svg class="i" width="20" height="20"><use href="#pl"/></svg></div>
+<div class="st" style="top:1251px">DELIVER</div><div class="sd" style="top:1267px">Testing, optimizing, and launching<br>with perfection.</div>
+
+<!-- QUOTE -->
+<div class="a" style="left:799px;top:955px;width:225px;height:357px;background:radial-gradient(ellipse at 30% 15%,#6d0c12,#2d0508 70%,#1a0305)"></div>
+<div class="a r" style="left:820px;top:978px;font:700 84px/84px Georgia,serif">&ldquo;</div>
+<div class="a" style="left:822px;top:1034px;font:400 18px/21.5px Inter">Good design<br>is not just how<br>it looks, but how<br>it works.</div>
+<div class="a" style="left:822px;top:1128px;font:400 42px/50px Allura,cursive;font-style:italic">Bang Hans</div>
+<div class="a" style="left:827px;top:1229px;font-size:12px;line-height:14px">LET'S CREATE<br>SOMETHING GREAT<br>TOGETHER.</div>
+<svg class="a" style="left:827px;top:1279px;width:18px;height:18px"><use href="#st"/></svg>
+<div class="ln" style="top:1312px;background:#6a0d13"></div>
+
+<!-- FOOTER -->
+<div class="a" style="left:34px;top:1334px;font:800 29px/34px Inter;letter-spacing:.2px">LET'S WORK<br>TOGETHER</div>
+<svg class="a" style="left:225px;top:1355px;width:24px;height:24px"><use href="#st"/></svg>
+<div class="a g" style="left:34px;top:1412px;font-size:13px;line-height:16px">I'm currently open for new projects and<br>collaborations. Let's create something<br>amazing that drives results.</div>
+<div class="ci s" data-soon style="left:34px;top:1475px;width:32px;height:32px"><svg class="i r" width="16" height="14"><use href="#ar"/></svg></div>
+<div class="a r s" data-soon style="left:76px;top:1484px;font:700 12px/14px Inter">AVAILABLE FOR FREELANCE</div>
+
+<div class="ci s" data-soon style="left:333px;top:1335px;width:38px;height:38px"><svg class="i" width="18" height="18"><use href="#ml"/></svg></div>
+<div class="a s" data-soon style="left:388px;top:1346px;font-size:13px;line-height:16px">hello@banghans.dev</div>
+<div class="a" style="left:388px;top:1376px;width:175px;height:1px;background:#2a1214"></div>
+<div class="ci s" data-soon style="left:333px;top:1380px;width:38px;height:38px"><svg class="i" width="18" height="18"><use href="#gl"/></svg></div>
+<div class="a s" data-soon style="left:388px;top:1391px;font-size:13px;line-height:16px">www.banghans.dev</div>
+<div class="a" style="left:388px;top:1421px;width:175px;height:1px;background:#2a1214"></div>
+<div class="ci s" data-soon style="left:333px;top:1424px;width:38px;height:38px"><svg class="i" width="18" height="18"><use href="#ph"/></svg></div>
+<div class="a s" data-soon style="left:388px;top:1435px;font-size:13px;line-height:16px">+62 812 3456 7890</div>
+<div class="a" style="left:388px;top:1465px;width:175px;height:1px;background:#2a1214"></div>
+<div class="ci s" data-soon style="left:333px;top:1469px;width:38px;height:38px"><svg class="i" width="18" height="18"><use href="#pn"/></svg></div>
+<div class="a s" data-soon style="left:388px;top:1480px;font-size:13px;line-height:16px">Jakarta, Indonesia</div>
+
+<svg class="a" style="left:560px;top:1315px;width:464px;height:221px" viewBox="0 0 464 221">
+ <defs><linearGradient id="bs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a2d"/><stop offset="1" stop-color="#0d0d0e"/></linearGradient></defs>
+ <path d="M112 12L440 42V190L125 166Z" fill="#0b0b0c" stroke="#2c2c30" stroke-width="3"/>
+ <path d="M96 168L462 196V214L80 190Z" fill="url(#bs)"/>
+ <path d="M330 52L400 58 410 150 360 146Z" fill="#c9181f"/><path d="M360 100L440 108V150L380 146Z" fill="#7d0d12"/>
+ <text x="148" y="60" fill="#fff" font-family="Inter,Arial" font-weight="800" font-size="12" transform="rotate(4 148 60)">WE</text>
+ <text x="148" y="76" fill="#fff" font-family="Inter,Arial" font-weight="800" font-size="12" transform="rotate(4 148 76)">DESIGN</text>
+ <text x="148" y="92" fill="#fff" font-family="Inter,Arial" font-weight="800" font-size="12" transform="rotate(4 148 92)">DIGITAL</text>
+ <text x="148" y="108" fill="#fff" font-family="Inter,Arial" font-weight="800" font-size="12" transform="rotate(4 148 108)">EXPERIENCES</text>
+ <rect x="12" y="112" width="62" height="76" rx="6" fill="#111113" stroke="#2a2a2e"/>
+ <path d="M74 128q22 4 18 24t-18 14" fill="none" stroke="#1a1a1d" stroke-width="7"/>
+ <text x="30" y="160" fill="#555" font-family="Playfair Display,serif" font-size="20">BH</text>
+</svg>
+</div>
+<div id="toast">👉 segera hadir</div>
+
+<script>
+document.addEventListener('click',function(e){
+  if(e.target.closest('[data-soon]')){var t=document.getElementById('toast');t.classList.add('on');clearTimeout(window._t);window._t=setTimeout(function(){t.classList.remove('on')},1800)}
+});
+function fit(el,x,y,w,cap){
+  var cs=getComputedStyle(el.firstElementChild||el),c=document.createElement('canvas').getContext('2d');
+  c.font=cs.fontWeight+' 100px '+cs.fontFamily;
+  var m=c.measureText('H'),cp=m.actualBoundingBoxAscent/100,as=(m.fontBoundingBoxAscent||110)/100,ds=(m.fontBoundingBoxDescent||30)/100;
+  var fs=cap/cp;
+  el.style.fontSize=fs+'px';el.style.lineHeight='1';el.style.transform='none';
+  el.style.left=x+'px';el.style.top=(y-((fs-(as+ds)*fs)/2+as*fs-cap))+'px';
+  el.style.transformOrigin='left top';
+  el.style.transform='scaleX('+(w/el.offsetWidth)+')';
+}
+function layout(){
+  fit(document.getElementById('big'),30,70,968,265);
+  fit(document.getElementById('n1'),34,295,149,77);
+  fit(document.getElementById('n2'),34,376,149,77);
+}
+function zoomFit(){
+  var z=Math.min(window.innerWidth/1024,1.6);
+  document.getElementById('app').style.zoom=z;
+}
+zoomFit();addEventListener('resize',zoomFit);
+(document.fonts&&document.fonts.load?document.fonts.load('100px Anton'):Promise.resolve()).then(layout,layout);
+addEventListener('load',layout);
+</script></body></html>
