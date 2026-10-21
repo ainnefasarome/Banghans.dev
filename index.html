@@ -147,10 +147,10 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 <div class="ln" style="top:632px;background:#6a0d13"></div>
 
 <!-- SELECTED PROJECTS -->
-<div class="a" style="left:30px;top:652px;font:600 21px/24px Inter">SELECTED PROJECTS</div>
-<div class="a" style="left:262px;top:664px;width:564px;height:1px;background:#555"></div>
-<div class="a s" data-soon style="left:843px;top:657px;font-size:11.5px;line-height:14px">VIEW ALL PROJECTS</div>
-<svg class="a i s" data-soon style="left:966px;top:655px;width:32px;height:18px"><use href="#ar"/></svg>
+<div class="a rv" style="left:30px;top:652px;font:600 21px/24px Inter">SELECTED PROJECTS</div>
+<div class="a rv" style="left:262px;top:664px;width:564px;height:1px;background:#555"></div>
+<div class="a s rv" data-soon style="left:843px;top:657px;font-size:11.5px;line-height:14px">VIEW ALL PROJECTS</div>
+<svg class="a i s rv" data-soon style="left:966px;top:655px;width:32px;height:18px"><use href="#ar"/></svg>
 
 <div id="rest" style="margin-top:690px">
 <div id="pg" style="padding:12px 30px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;background:radial-gradient(ellipse at 20% 0,#2a0a0e,transparent 60%),#08080a"></div>
@@ -288,7 +288,8 @@ addEventListener('load',layout);
 /* ===== animasi scroll, progres, dan pembuka ===== */
 (function(){
 var app=document.getElementById('app'),pre=document.getElementById('pre'),de=document.documentElement,done=false;
-var io=new IntersectionObserver(function(es){es.forEach(function(e){var t=e.target;if(e.isIntersecting)t.classList.add('in');else if(e.boundingClientRect.top>0)t.classList.remove('in')})},{rootMargin:'0px 0px -10% 0px',threshold:0.05});
+window.introDone=false;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){var t=e.target;if(e.isIntersecting){if(window.introDone!==false)t.classList.add('in')}else if(e.boundingClientRect.top>0)t.classList.remove('in')})},{rootMargin:'0px 0px -10% 0px',threshold:0.05});
 window.watch=function(root){(root||document).querySelectorAll('.rv:not([data-w])').forEach(function(el){el.setAttribute('data-w',1);io.observe(el)})};
 watch();
 var sp=document.getElementById('sp'),ln=document.querySelector('.rm-l'),wr=document.querySelector('.rm-w'),tk=false;
@@ -301,11 +302,11 @@ mk('#big','he1',.15,['opacity','translate']);
 mk('#app img[src="foto.webp"],#app img[src="flame.webp"]','he2',.55,['translate']);
 mk('#app>[style*="z-index:5"]','he',function(l){return l<500?.95:1.15},['opacity','translate']);
 var st=document.createElement('style');st.textContent='.pre .he1{opacity:0;translate:0 90px}.pre .he2{translate:0 60px}.pre .he{opacity:0;translate:0 26px}';document.head.appendChild(st);
-function finish(){if(done)return;done=true;app.classList.remove('pre');pre.classList.add('out');setTimeout(function(){pre.remove();de.style.overflow='';upd()},1000)}
-if(matchMedia('(prefers-reduced-motion: reduce)').matches){pre.remove();return}
-app.classList.add('pre');de.style.overflow='hidden';setTimeout(finish,14000);
+function finish(){if(done)return;done=true;app.classList.remove('pre');pre.classList.add('out');setTimeout(function(){pre.remove();de.style.overflow='';upd()},1000);setTimeout(function(){window.introDone=true;document.querySelectorAll('.rv').forEach(function(el){io.unobserve(el);io.observe(el)})},300)}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){window.introDone=true;pre.remove();return}
+app.classList.add('pre');de.style.overflow='hidden';
 function T(ms,c){setTimeout(function(){if(!done)pre.classList.add(c)},ms)}
-T(2000,'w');T(2000,'up');T(4300,'hd');T(4450,'hero');setTimeout(finish,7300);
+T(2000,'w');T(2000,'up');T(4300,'hd');T(4450,'hero');
 document.getElementById('pgo').addEventListener('click',finish);
 document.getElementById('pwk').addEventListener('click',function(){finish();setTimeout(function(){var e=document.getElementById('pg');if(e)window.scrollTo({top:e.getBoundingClientRect().top+scrollY-120,behavior:'smooth'})},900)});
 /* logo menulis di layar pembuka */
