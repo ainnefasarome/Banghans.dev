@@ -6,7 +6,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:#050506}
 body{font-family:Inter,Arial,sans-serif;color:#fff;-webkit-text-size-adjust:100%}
-#app{position:relative;width:1024px;overflow:hidden;margin:0 auto;background:#070708}
+#app{position:relative;width:1024px;overflow:hidden;margin:0 auto;background:transparent}
 .a{position:absolute;white-space:nowrap}
 .r{color:#e31b23}
 .an{font-family:Anton,Impact,sans-serif;font-weight:400}
@@ -89,6 +89,10 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 .pb a{font:600 21px/1 Inter,sans-serif;padding:21px 32px;border-radius:50px;cursor:pointer;user-select:none}
 #pgo{background:#fff;color:#0a0a0b}#pwk{color:#dcdce0;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05)}
 #pre.out{opacity:0;pointer-events:none}#pre.out #pstage{filter:blur(16px);transform:scale(1.07)}
+.mq{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+.mqt{display:flex;width:max-content;animation:mq 17s linear infinite}
+.mqi{flex:none;width:30px;height:30px;border-radius:8px;margin:2px 12px 2px 0;overflow:hidden}.mqi img{display:block;width:100%;height:100%}
+@keyframes mq{to{transform:translateX(-50%)}}
 </style></head><body>
 <div id="sp" style="position:fixed;left:0;top:0;height:3px;width:100%;background:#e31b23;transform:scaleX(0);transform-origin:left;z-index:998;pointer-events:none"></div>
 <div id="pre"><img id="pbg" src="intro-bg.webp" alt=""><div id="pdots"></div><div id="pstage">
@@ -108,9 +112,10 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 <symbol id="ar" viewBox="0 0 24 24"><path d="M2 12h19M15 6l6 6-6 6"/></symbol>
 </defs></svg>
 
+<canvas id="bgc" style="position:fixed;left:0;top:0;width:100%;height:100%;z-index:0;pointer-events:none"></canvas>
 <div id="app">
 <!-- HERO -->
-<div class="a" style="left:0;top:0;width:1024px;height:632px;overflow:hidden">
+<div class="a" style="left:0;top:0;width:1024px;height:632px;overflow:hidden;background:#070708">
   <div class="a" id="big" style="color:transparent;-webkit-background-clip:text;background-clip:text;background-image:url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.38'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>&quot;),linear-gradient(180deg,#d9161f,#8a0a10);"><span class="an">BANGHANS</span></div>
   <img class="a" src="foto.webp" alt="" onerror="this.style.display='none'" style="left:351px;top:74px;width:380px;z-index:2;-webkit-mask-image:linear-gradient(180deg,#000 86%,transparent 100%);mask-image:linear-gradient(180deg,#000 86%,transparent 100%)">
   <img class="a" src="foto.webp" alt="" style="left:351px;top:74px;width:380px;z-index:2;mix-blend-mode:screen;opacity:0;animation:pb 1.15s infinite ease-in-out;-webkit-mask-image:radial-gradient(ellipse 140px 200px at 190px 300px,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 140px 200px at 190px 300px,#000 40%,transparent 100%)">
@@ -131,6 +136,7 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 <svg class="a i r" style="left:32px;top:601px;width:17px;height:17px;z-index:5"><use href="#gl"/></svg>
 <div class="a" style="left:58px;top:603px;font-size:11px;line-height:14px;z-index:5">AVAILABLE WORLDWIDE</div>
 
+<div class="a mq" style="left:364px;top:597px;width:360px;height:34px;z-index:5"><div class="mqt"><span class="mqi" style="background:#ffffff"><img src="mq-html.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-css.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-js.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-python.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-java.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-github.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-linux.webp" alt=""></span><span class="mqi" style="background:#000000"><img src="mq-terminal.webp" alt=""></span><span class="mqi" style="background:#fafcf9"><img src="mq-android.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-html.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-css.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-js.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-python.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-java.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-github.webp" alt=""></span><span class="mqi" style="background:#ffffff"><img src="mq-linux.webp" alt=""></span><span class="mqi" style="background:#000000"><img src="mq-terminal.webp" alt=""></span><span class="mqi" style="background:#fafcf9"><img src="mq-android.webp" alt=""></span></div></div>
 <div class="a" style="left:775px;top:311px;width:44px;height:44px;border:1.5px solid #e31b23;border-radius:50%;z-index:5"></div>
 <svg class="a" style="left:787px;top:323px;width:20px;height:20px;z-index:5"><use href="#st"/></svg>
 <div class="a" style="left:833px;top:309px;font-size:13px;line-height:15px;z-index:5;color:#eee">Turning ideas<br>into powerful<br>digital experiences.</div>
@@ -153,8 +159,8 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 <svg class="a i s rv" data-soon style="left:966px;top:655px;width:32px;height:18px"><use href="#ar"/></svg>
 
 <div id="rest" style="margin-top:690px">
-<div id="pg" style="padding:12px 30px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;background:radial-gradient(ellipse at 20% 0,#2a0a0e,transparent 60%),#08080a"></div>
-<div style="background:#0a0a0b;padding:50px 60px 56px;display:flex;justify-content:space-between;border-top:1px solid #1d1d20">
+<div id="pg" style="padding:12px 30px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;background:radial-gradient(ellipse at 20% 0,rgba(42,10,14,.75),transparent 60%),rgba(8,8,10,.30)"></div>
+<div style="background:rgba(10,10,11,.42);padding:50px 60px 56px;display:flex;justify-content:space-between;border-top:1px solid #1d1d20">
  <div style="width:420px"><div class="rv" style="font:600 30px/36px Inter;margin-bottom:22px">About Me</div>
  <p class="ab rv">Saya Bang Hans, developer sekaligus teknisi sistem smartphone yang selalu digerakkan oleh rasa ingin tahu. Saya tidak terpaku pada satu bidang saja. Bagi saya, setiap hal baru adalah kesempatan untuk belajar, merancang, dan menciptakan sesuatu yang mungkin belum terpikirkan oleh banyak orang.</p>
 <p class="ab rv">Saya membangun website dan aplikasi Android, serta meracik skrip dan file khusus untuk berbagai kebutuhan. Setiap karya yang saya bagikan selalu dilengkapi keterangan dan panduan penggunaan, agar mudah dipahami dan dipakai oleh siapa saja.</p>
@@ -165,7 +171,7 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 <div class="bt s rv" data-soon style="width:162px;margin-top:22px">Download Resume &nbsp;⤓</div></div>
  <div style="width:380px;display:flex;justify-content:center;padding-top:8px"><svg id="lg" viewBox="-60 -40 2120 1700" width="380" height="305"><path id="lf" fill="#fff" fill-rule="evenodd" opacity="0"/><g id="ls" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"></g><circle id="ld" r="26" fill="#fff" opacity="0"/></svg></div>
 </div>
-<div style="background:#0a0a0b;padding:46px 0 40px;border-top:1px solid #1d1d20"><div class="rv" style="padding:0 60px;font:700 40px/46px Inter">Skills &amp; Tools</div><div class="rv" style="padding:8px 60px 26px;font-size:13px;color:#8a8a90">Alat yang kupakai, lengkap dengan fungsinya masing-masing.</div><div class="rm-pill rv">★ Skills &amp; Tools Roadmap</div><div class="rm-w"><div class="rm-l"></div><div class="rm-c l" id="rml"></div><div class="rm-c r" id="rmr"></div></div>
+<div style="background:rgba(10,10,11,.42);padding:46px 0 40px;border-top:1px solid #1d1d20"><div class="rv" style="padding:0 60px;font:700 40px/46px Inter">Skills &amp; Tools</div><div class="rv" style="padding:8px 60px 26px;font-size:13px;color:#8a8a90">Alat yang kupakai, lengkap dengan fungsinya masing-masing.</div><div class="rm-pill rv">★ Skills &amp; Tools Roadmap</div><div class="rm-w"><div class="rm-l"></div><div class="rm-c l" id="rml"></div><div class="rm-c r" id="rmr"></div></div>
 <svg class="rv" viewBox="0 0 640 270" width="640" height="270" style="display:block;margin:34px auto 0"><defs><linearGradient id="dk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a30"/><stop offset="1" stop-color="#0c0c0e"/></linearGradient></defs>
 <path d="M0 270V196Q320 168 640 196V270Z" fill="url(#dk)"/>
 <rect x="228" y="22" width="190" height="124" rx="7" fill="#0c0c0e" stroke="#3a3a40" stroke-width="3"/><rect x="238" y="32" width="170" height="104" rx="3" fill="#0a0a0b"/><rect x="246" y="40" width="70" height="8" fill="#e31b23"/><rect x="246" y="56" width="110" height="5" fill="#3a3a42"/><rect x="246" y="68" width="90" height="5" fill="#3a3a42"/><rect x="246" y="80" width="124" height="5" fill="#e31b23" opacity=".6"/><rect x="246" y="92" width="80" height="5" fill="#3a3a42"/><rect x="246" y="104" width="100" height="5" fill="#3a3a42"/><rect x="340" y="40" width="58" height="40" rx="3" fill="#7d0d12"/>
@@ -175,12 +181,12 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke
 <rect x="284" y="200" width="150" height="26" rx="5" fill="#16161a" stroke="#34343a" stroke-width="2"/><g fill="#d8d8de"><rect x="292" y="206" width="14" height="6" rx="1.5"/><rect x="310" y="206" width="14" height="6" rx="1.5"/><rect x="328" y="206" width="14" height="6" rx="1.5"/><rect x="346" y="206" width="14" height="6" rx="1.5"/><rect x="364" y="206" width="14" height="6" rx="1.5"/><rect x="382" y="206" width="14" height="6" rx="1.5"/><rect x="400" y="206" width="26" height="6" rx="1.5"/><rect x="300" y="215" width="110" height="6" rx="1.5"/></g>
 <rect x="462" y="168" width="38" height="44" rx="6" fill="#e8e8ec"/><path d="M500 178h10q10 0 10 12t-10 12h-10" fill="none" stroke="#e8e8ec" stroke-width="5"/><rect x="462" y="168" width="38" height="8" rx="3" fill="#b9b9c0"/>
 <rect x="534" y="198" width="82" height="52" rx="4" fill="#e31b23" transform="rotate(-6 575 224)"/><rect x="540" y="202" width="70" height="44" rx="3" fill="#f4f4f6" transform="rotate(-6 575 224)"/><path d="M556 234l40-12" stroke="#222" stroke-width="3" stroke-linecap="round"/></svg></div>
-<div style="background:#150b0e;padding:42px 60px 60px;border-top:1px solid #2a1215">
+<div style="background:rgba(21,11,14,.55);padding:42px 60px 60px;border-top:1px solid #2a1215">
  <div class="rv" style="font:700 44px/50px Inter;color:#f1dfe0">Blog</div>
  <div class="rv" style="font-size:13px;color:#8a7478;margin:14px 0 52px">Welcome to my blog! Here you'll find a collection of my thoughts and experiences. I hope you enjoy reading them as much as I enjoy writing them.</div>
  <div id="bl" style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px 24px"></div>
 </div>
-<div style="background:#09090a;padding:70px 70px 70px;display:flex;justify-content:space-between;border-top:1px solid #1d1d20">
+<div style="background:rgba(9,9,10,.45);padding:70px 70px 70px;display:flex;justify-content:space-between;border-top:1px solid #1d1d20">
  <div class="rv rvl" style="width:330px"><div style="color:#e31b23;font-size:9px;letter-spacing:2px;display:flex;align-items:center;gap:8px"><span style="width:26px;height:1px;background:#e31b23"></span>GET IN TOUCH</div>
  <div style="font:600 34px/38px Inter;margin:16px 0 26px">Let's Work<br>Together</div>
  <div style="font-size:12.5px;line-height:19px;color:#cfcfd2">Have a project in mind? Want to collaborate on a game? Or just want to say hello? I'd love to hear from you.</div>
@@ -320,4 +326,19 @@ if(p<1)requestAnimationFrame(fr);else{ps.forEach(function(pt){pt.style.opacity=0
 requestAnimationFrame(fr);
 })();
 (function(){var b=document.getElementById('abt'),x=document.getElementById('abx'),o=false;b.addEventListener('click',function(){o=!o;x.style.maxHeight=o?x.scrollHeight+'px':'0';b.querySelector('span').textContent=o?'Lihat lebih sedikit':'Lihat lebih lengkap';b.classList.toggle('op',o)})})();
+
+/* ===== latar partikel putih (jaring bintang) ===== */
+(function(){var c=document.getElementById('bgc'),x=c.getContext('2d'),W,H,P=[],S=[],last=0,still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function init(){W=c.width=Math.max(200,Math.round(innerWidth*.5));H=c.height=Math.max(300,Math.round(innerHeight*.5));P=[];S=[];var n=Math.round(W*H/5200);if(n>70)n=70;
+for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.28,vy:(Math.random()-.5)*.28,r:Math.random()*1.1+.7});
+for(i=0;i<110;i++)S.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*.7+.25,p:Math.random()*6.28,s:Math.random()*1.5+.5})}
+function draw(t){x.clearRect(0,0,W,H);var D=W*.19,i,j,a,b,dx,dy,d;
+for(i=0;i<S.length;i++){a=S[i];x.globalAlpha=.22+.3*Math.sin(t*.001*a.s+a.p);x.fillStyle='#fff';x.fillRect(a.x,a.y,a.r*1.6,a.r*1.6)}
+x.lineWidth=.7;
+for(i=0;i<P.length;i++){a=P[i];if(!still){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1}
+for(j=i+1;j<P.length;j++){b=P[j];dx=a.x-b.x;dy=a.y-b.y;d=Math.sqrt(dx*dx+dy*dy);if(d<D){x.globalAlpha=(1-d/D)*.38;x.strokeStyle='#fff';x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+x.globalAlpha=.8;x.fillStyle='#fff';x.beginPath();x.arc(a.x,a.y,a.r,0,6.283);x.fill()}x.globalAlpha=1}
+function loop(ts){requestAnimationFrame(loop);if(document.hidden||document.getElementById('pre')||ts-last<33)return;last=ts;draw(ts)}
+init();addEventListener('resize',function(){init()});if(still)draw(0);else requestAnimationFrame(loop);
+})();
 </script></body></html>
